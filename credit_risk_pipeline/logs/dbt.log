@@ -1,0 +1,84 @@
+[0m22:52:21.994951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4988A33E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D498B34A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D498B34440>]}
+
+
+============================== 22:52:21.994951 | 227b464a-7c94-4809-8158-e20351b84450 ==============================
+[0m22:52:21.994951 [info ] [MainThread]: Running with dbt=1.8.0
+[0m22:52:21.994951 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\nikhi\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init credit_transforms', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:52:22.023027 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/nikhi/.dbt')}
+[0m22:52:22.023027 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:52:22.028709 [debug] [MainThread]: Starter project path: D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m22:52:22.061404 [info ] [MainThread]: 
+Your new dbt project "credit_transforms" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:52:22.063415 [info ] [MainThread]: Setting up your profile.
+[0m22:52:33.065674 [error] [MainThread]: Encountered an error:
+cannot import name 'get_pyodbc_attrs_before' from 'dbt.adapters.fabric.fabric_connection_manager' (D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py)
+[0m22:52:33.132841 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\task\init.py", line 173, in create_profile_from_target
+    load_plugin(adapter)
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nikhi\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\sqlserver\__init__.py", line 3, in <module>
+    from dbt.adapters.sqlserver.sqlserver_adapter import SQLServerAdapter
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\sqlserver\sqlserver_adapter.py", line 9, in <module>
+    from dbt.adapters.sqlserver.sqlserver_connections import SQLServerConnectionManager
+  File "D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\sqlserver\sqlserver_connections.py", line 11, in <module>
+    from dbt.adapters.fabric.fabric_connection_manager import (
+ImportError: cannot import name 'get_pyodbc_attrs_before' from 'dbt.adapters.fabric.fabric_connection_manager' (D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\venv\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py)
+
+[0m22:52:33.133829 [debug] [MainThread]: Command `dbt init` failed at 22:52:33.133829 after 11.24 seconds
+[0m22:52:33.133829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4983E4DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D49A1A38C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D499F52F60>]}
+[0m22:52:33.133829 [debug] [MainThread]: Flushing usage events
+[0m09:38:32.711943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E79ED7200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E79ED7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E79ED7080>]}
+
+
+============================== 09:38:32.713676 | 03549edf-7a9c-4a60-b8f7-efb2de307a59 ==============================
+[0m09:38:32.713676 [info ] [MainThread]: Running with dbt=1.8.0
+[0m09:38:32.713676 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\nikhi\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:38:32.713676 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Nikhil_Files\Downloads\Credit_risk Complete Project\credit_risk_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:38:32.713676 [debug] [MainThread]: Command `dbt compile` failed at 09:38:32.713676 after 0.13 seconds
+[0m09:38:32.713676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E79E492E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7A02BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E7A02AE70>]}
+[0m09:38:32.713676 [debug] [MainThread]: Flushing usage events

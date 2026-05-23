@@ -1,0 +1,14 @@
+# Ignore all raw data files and Excel books at the root
+*.csv
+*.xlsx
+*.twb
+
+# Ignore Python virtual environments and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore local IDE settings
+.vs/
+.vscode/
