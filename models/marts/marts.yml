@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_risk_analytics
+    description: "Optimized ledger for downstream reporting metrics and scoring distribution profiles."
+  - name: fct_income_quartiles
+    description: "Income categorization distributions for portfolio cohort tracking."
+  - name: fct_risk_anomalies
+    description: "Isolates operational edge cases like poor credit approvals or high score rejections."
+  - name: fct_demographic_fairness
+    description: "Computes conditional approval velocity across demographic groupings."

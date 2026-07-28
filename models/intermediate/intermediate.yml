@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_risk_base
+    description: "Generates explicit baseline risk bands and processing status anomalies."
+  - name: int_income_metrics
+    description: "Produces systemic income distribution quartiles and cohort tier assignments."

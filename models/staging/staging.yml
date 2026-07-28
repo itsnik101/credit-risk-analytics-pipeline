@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: credit_risk
+    database: creditrisk_db
+    schema: dbo
+    tables:
+      - name: loans                 
+
+models:
+  - name: stg_loans
+    description: "Transforms, casts, and preserves all unified raw credit tracking data fields."
+    columns:
+      - name: applicant_id
+        data_tests:
+          - unique
+          - not_null

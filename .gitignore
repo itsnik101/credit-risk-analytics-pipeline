@@ -1,0 +1,34 @@
+# Virtual environments
+credit_env/
+venv/
+.venv/
+env/
+
+# dbt compiled artifacts & packages
+target/
+dbt_packages/
+logs/
+
+# Sensitive connection profiles & environment variables
+profiles.yml
+.env
+*.pem
+
+# Local data files & exports (CSVs, Excel)
+*.csv
+*.xlsx
+*.parquet
+
+# Python cache & OS metadata
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Anaconda / Conda files
+.conda/
