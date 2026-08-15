@@ -143,7 +143,12 @@ The materialized marts power an executive decision intelligence platform in Tabl
 2. **Underwriting Risk Scatter Analysis:** A 2D quadrant scatter plot mapping **Credit Score vs. Loan-to-Income Ratio** against regulatory benchmarks (**600 Subprime Floor**, **4.5 Max LTI Ceiling**).
 3. **Risk Matrix Heatmap:** Cross-tabulation matrices analyzing approval velocity across employment types and risk profiles.
 
-*(Add a link or screenshot of your Tableau Public Dashboard here)*
+<img width="2879" height="1740" alt="Screenshot 2026-08-15 151929" src="https://github.com/user-attachments/assets/807e4c7c-7704-4997-88fe-0057b228e854" />
+<img width="2879" height="1732" alt="Screenshot 2026-08-15 151941" src="https://github.com/user-attachments/assets/9ecbace4-cf26-42c2-a674-f7b6995356e1" />
+<img width="2847" height="1690" alt="image" src="https://github.com/user-attachments/assets/7276b076-8d15-4ee8-96c3-9e50400c66b6" />
+
+
+
 
 > 🔗 **[View Live Interactive Dashboard on Tableau Public](https://www.google.com/search?q=%23)**
 
